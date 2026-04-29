@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Your Cart</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body class="bg-black text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MONOCHROME</a>
+      <!-- HAMBURGER -->
+    <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+  ☰
+</button>
+    </button>
+
+    
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="men.html">MEN</a></li>
+          <li class="nav-item"><a class="nav-link" href="women.html">WOMEN</a></li>
+          <li class="nav-item"><a class="nav-link" href="accessories.html">ACCESSORIES</a></li>
+          <li class="nav-item"><a class="nav-link" href="runways.html">RUNWAYS</a></li>
+          <li class="nav-item"><a class="nav-link" href="interviews.html">INTERVIEWS</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container mt-5">
+    <h2 class="fw-bold mb-4">🛒 Your Cart</h2>
+
+    <div class="cart-box p-4">
+        <ul id="cart-items" class="list-group mb-3"></ul>
+
+        <h4>Total: $<span id="total">0</span></h4>
+
+        <button class="btn btn-outline-light mt-3" onclick="clearCart()">Clear Cart</button>
+    </div>
+</div>
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let total = 0;
+
+const list = document.getElementById("cart-items");
+
+function renderCart() {
+    list.innerHTML = "";
+    total = 0;
+
+    cart.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-items-center bg-dark text-white";
+
+        li.innerHTML = `
+            ${item.name} - $${item.price}
+            <button class="btn btn-sm btn-danger" onclick="removeItem(${index})">X</button>
+        `;
+
+        list.appendChild(li);
+        total += item.price;
+    });
+
+    document.getElementById("total").innerText = total;
+}
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+}
+
+function clearCart() {
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+}
+
+function purchase() {
+    alert("Thank you for your purchase!");
+    purchase();
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart(); 
+} 
+
+// Load cart on page open
+renderCart();
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
