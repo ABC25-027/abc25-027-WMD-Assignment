@@ -10,27 +10,35 @@
 <body>
    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">MONOCHROME</a>
     
-    <!-- HAMBURGER -->
-    <button class="navbar-toggler" type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- 1. LOGO (Left) -->
+    <a class="navbar-brand fw-bold" href="index.html">MONOCHROME</a>
 
+    <!-- 2. MOBILE ACTIONS (Right) -->
+    <!-- We put Cart and Toggler in one div so they stay together on the right -->
+    <div class="d-flex align-items-center ms-auto">
+      
+      <!-- Cart is always visible -->
+      <a class="nav-link me-3" href="cart.html" style="color: #fff; font-weight: 700; font-size: 0.8rem;">
+        CART
+      </a>
+
+      <!-- Hamburger button only shows on mobile -->
+      <button class="navbar-toggler border-0 p-0" type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav">
+          <span style="font-size: 1.5rem; color: #fff;">☰</span>
+      </button>
+    </div>
+
+    <!-- 3. THE HIDDEN PAGES (Collapses on mobile) -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <!-- 'ms-lg-auto' pushes links to right on desktop; 'text-end' aligns them on mobile -->
+      <ul class="navbar-nav ms-lg-auto text-end mt-3 mt-lg-0">
         
-        <!-- SHOP DROPDOWN -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            SHOP
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDrop" data-bs-toggle="dropdown">SHOP</a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
             <li><a class="dropdown-item" href="men.html">MEN</a></li>
             <li><a class="dropdown-item" href="women.html">WOMEN</a></li>
             <li><a class="dropdown-item" href="accessories.html">ACCESSORIES</a></li>
@@ -43,6 +51,7 @@
         <li class="nav-item"><a class="nav-link" href="account.html">ACCOUNT</a></li>
       </ul>
     </div>
+
   </div>
 </nav>
 <div class="container mt-3">

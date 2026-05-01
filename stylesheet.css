@@ -961,3 +961,93 @@ body {
         display: block;
     }
 }
+
+/* Ensure cart and menu button look good together on mobile */
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    /* Make the cart link stand out slightly on mobile */
+    .nav-link[href="cart.html"] {
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    /* Style for the hamburger icon */
+    .navbar-toggler {
+        padding-right: 0;
+        color: #fff;
+    }
+}
+
+/* Optional: Small white dot for cart items */
+.cart-dot {
+    height: 6px;
+    width: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* 1. Sleek Navigation Links */
+.nav-link-modern {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2.5px; /* Adds that high-end look */
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+.nav-link-modern:hover {
+    opacity: 0.6; /* Soft fade instead of color change */
+}
+
+/* 2. Modern Cart Badge (Small Dot) */
+.cart-count-badge {
+    font-size: 0.6rem;
+    vertical-align: top;
+    margin-left: 2px;
+    font-weight: 400;
+}
+
+/* 3. The Modern Hamburger (Custom Lines) */
+.navbar-toggler-modern {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25px;
+    height: 20px;
+}
+
+/* Custom Menu Lines */
+.menu-icon .line {
+    display: block;
+    width: 25px;
+    height: 1px; /* Very thin line for elegance */
+    background-color: #fff;
+    margin-bottom: 6px;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.menu-icon .line:last-child {
+    margin-bottom: 0;
+    width: 18px; /* Make the bottom line shorter for a modern asymmetrical look */
+}
+
+/* Hover effect for the menu lines */
+.navbar-toggler-modern:hover .line:last-child {
+    width: 25px;
+}
