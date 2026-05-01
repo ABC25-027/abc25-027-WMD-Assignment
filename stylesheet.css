@@ -1051,3 +1051,57 @@ body {
 .navbar-toggler-modern:hover .line:last-child {
     width: 25px;
 }
+
+
+/* The main wrapper for your Cart/Checkout content */
+.cart-container, .checkout-container {
+    width: 95%;          /* Uses most of the screen on mobile */
+    max-width: 1200px;    /* Prevents it from getting too wide on desktop */
+    margin: 0 auto;       /* Centers the content */
+    padding: 15px;
+}
+
+/* Fix for Tables (Cart items) */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto; /* Adds a scrollbar ONLY to the table if it's too wide */
+        white-space: nowrap;
+    }
+}
+
+/* If you are using Bootstrap's row/col, this happens automatically. 
+   If you are using custom CSS: */
+.cart-layout {
+    display: flex;
+    flex-direction: column; /* Stack vertically by default */
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    .cart-layout {
+        flex-direction: row; /* Side-by-side only on laptops/desktops */
+    }
+}
+
+    input[type="text"], 
+input[type="email"], 
+.form-control {
+    width: 100% !important; /* Forces inputs to stay inside their parent div */
+    font-size: 16px;        /* Prevents iOS from zooming in automatically on click */
+}
+
+/* Ensure the checkout button isn't too small or too wide */
+.btn-receipt-primary {
+    width: 100%;
+    margin-top: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Prevents the page from shaking or scrolling sideways */
+    width: 100%;
+}
