@@ -261,7 +261,7 @@ grid-img {
 }
 
 /* BUTTON */
-button {
+.btn-action {
     background: linear-gradient(135deg, #686165, hsl(282, 10%, 81%));
     border: none;
     padding: 10px 20px;
@@ -274,11 +274,39 @@ button {
     position: relative;
 }
 
-button:hover {
-    box-shadow: 0 0 15px rgba(99, 92, 96, 0.6);
-    transform: scale(1.05);
+/* 2. THE NEW NAVBAR BUTTON (The one you want) */
+.navbar-toggler {
+    background: transparent !important; /* Removes the gradient */
+    border: none !important;           /* Removes the border */
+    padding: 0 !important;              /* Removes the extra box padding */
+    box-shadow: none !important;        /* Removes the glow on click */
 }
 
+/* Container for the lines */
+.modern-menu-icon {
+    width: 24px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* The actual white lines */
+.modern-menu-icon span {
+    display: block;
+    height: 1px; 
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.line-1 { width: 24px; }
+.line-2 { width: 14px; } /* The asymmetrical modern look */
+
+/* Hover effect */
+.navbar-toggler:hover .line-2 {
+    width: 24px;
+}
 .hero-content button {
     background: linear-gradient(45deg, #686165, hsl(282, 10%, 81%) );
     border: none;
@@ -1104,4 +1132,224 @@ input[type="email"],
 body {
     overflow-x: hidden; /* Prevents the page from shaking or scrolling sideways */
     width: 100%;
+}
+
+/* --- CONTACT PAGE SPECIFIC --- */
+
+.label {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #555; /* Muted label text */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* Custom Minimalist Input Fields */
+.form-control-custom {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333; /* Very thin dark line */
+    padding: 15px 0;
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-radius: 0;
+    transition: border-color 0.4s ease;
+}
+
+.form-control-custom:focus {
+    outline: none;
+    border-bottom: 1px solid #ffffff; /* Line turns white when typing */
+}
+
+/* Make placeholders look consistent */
+.form-control-custom::placeholder {
+    color: #444;
+}
+
+/* Add some space for mobile */
+@media (max-width: 991px) {
+    .display-5 {
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+}
+
+/* --- ULTRA MINIMALIST FOOTER --- */
+
+/* --- MONOCHROME CUSTOM FOOTER --- */
+
+.monochrome-footer {
+    background-color: #000; /* Matching your black-and-white theme */
+    padding: 60px 0 30px 0;
+    width: 100%;
+    border-top: 1px solid #1a1a1a;
+    margin-top: auto; /* Keeps it at the bottom of the page */
+}
+
+/* Horizontal Link Row */
+.footer-nav-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.f-link {
+    text-decoration: none;
+    color: #777; /* Muted gray for that high-end look */
+    font-size: 0.65rem; 
+    font-weight: 700;
+    letter-spacing: 2.5px; /* High spacing like Rick Owens */
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.f-link:hover {
+    color: #fff; /* Highlights white on hover */
+}
+
+/* Legal text Row */
+.footer-legal-row p {
+    color: #444; 
+    font-size: 0.55rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-nav-row {
+        gap: 15px;
+    }
+    .f-link {
+        font-size: 0.6rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+/* --- FOOTER FIXES --- */
+.monochrome-footer {
+    background-color: #000;
+    padding: 60px 0 30px 0;
+    width: 100%;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-nav-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.f-link {
+    text-decoration: none;
+    color: #777;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.footer-legal-row p {
+    color: #444;
+    font-size: 0.55rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+/* Ensure the hero video stays behind everything */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* --- CATEGORY SPLIT --- */
+.category-card {
+    height: 80vh; /* Large impact height */
+}
+
+.category-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s ease;
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2); /* Faint tint */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+}
+
+.category-title {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 15px; /* Wide editorial spacing */
+    transition: letter-spacing 0.5s ease;
+}
+
+.category-card:hover .category-img {
+    transform: scale(1.05);
+}
+
+.category-card:hover .category-title {
+    letter-spacing: 20px;
+}
+
+/* --- EDITORIAL QUOTE --- */
+.italic-font {
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- RUNWAY GALLERY --- */
+.runway-scroll-wrapper::-webkit-scrollbar {
+    height: 2px;
+}
+
+.runway-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #444;
+}
+
+.runway-item {
+    flex: 0 0 350px; /* Width of each runway photo */
+    height: 500px;
+}
+
+.runway-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%); /* Keeps it Monochrome */
+    transition: filter 0.5s ease;
+}
+
+.runway-item img:hover {
+    filter: grayscale(0%);
 }
