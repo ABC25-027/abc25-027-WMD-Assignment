@@ -1353,3 +1353,9 @@ body {
 .runway-item img:hover {
     filter: grayscale(0%);
 }
+
+p {
+    font-size: 1.1rem; /* Adjust this number (e.g., 1.05rem to 1.2rem) */
+    line-height: 1.7;  /* Increases vertical space between lines for better readability */
+    letter-spacing: 0.5px; /* Keeps the high-fashion editorial feel */
+}
