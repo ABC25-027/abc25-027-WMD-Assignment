@@ -9,13 +9,26 @@
     <!-- Your New Separate CSS -->
     <link rel="stylesheet" href="account.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+
     <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">MONOCHROME</a>
-      <!-- HAMBURGER -->
-    <button class="navbar-toggler" type="button" 
+   <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    
+    <!-- 1. LOGO (Left) -->
+    <a class="navbar-brand fw-bold" href="index.html">MONOCHROME</a>
+
+    <!-- 2. MOBILE ACTIONS (Right) -->
+    <!-- We put Cart and Toggler in one div so they stay together on the right -->
+    <div class="d-flex align-items-center ms-auto">
+      
+      <!-- Cart is always visible -->
+      <a class="nav-link me-3" href="cart.html" style="color: #fff; font-weight: 700; font-size: 0.8rem;">
+        CART
+      </a>
+
+      <!-- Hamburger button only shows on mobile -->
+     <button class="navbar-toggler" type="button" 
         data-bs-toggle="collapse" 
         data-bs-target="#navbarNav">
         
@@ -24,30 +37,40 @@
             <span class="line-2"></span>
         </div>
     </button>
-
-    
-
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="men.html">MEN</a></li>
-          <li class="nav-item"><a class="nav-link" href="women.html">WOMEN</a></li>
-          <li class="nav-item"><a class="nav-link" href="accessories.html">ACCESSORIES</a></li>
-          <li class="nav-item"><a class="nav-link" href="runways.html">RUNWAYS</a></li>
-          <li class="nav-item"><a class="nav-link" href="interviews.html">INTERVIEWS</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-          <li class="nav-item"><a class="nav-link" href="account.html">ACCOUNT</a></li>
-        </ul>
-      </div>
     </div>
-  </nav>
 
+    <!-- 3. THE HIDDEN PAGES (Collapses on mobile) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- 'ms-lg-auto' pushes links to right on desktop; 'text-end' aligns them on mobile -->
+      <ul class="navbar-nav ms-lg-auto text-end mt-3 mt-lg-0">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDrop" data-bs-toggle="dropdown">SHOP</a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+            <li><a class="dropdown-item" href="men.html">MEN</a></li>
+            <li><a class="dropdown-item" href="women.html">WOMEN</a></li>
+            <li><a class="dropdown-item" href="accessories.html">ACCESSORIES</a></li>
+          </ul>
+        </li>
 
+        <li class="nav-item"><a class="nav-link" href="runways.html">RUNWAYS</a></li>
+        <li class="nav-item"><a class="nav-link" href="interviews.html">INTERVIEWS</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="account.html">ACCOUNT</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<main class="flex-grow-1">
 <div class="container mt-5">
     <!-- Header Navigation -->
     <div class="d-flex justify-content-between align-items-center mb-5">
         <h1 class="logo">MONOCHROME</h1>
-        <a href="index.html" class="nav-back">BACK TO SHOP</a>
+        <a href="index.html" class="btn-back-store">
+    ← Return to Store
+</a>
     </div>
 
     <div class="row g-5">
@@ -115,62 +138,11 @@
         </div>
     </div>
 </div>
-<footer class="bg-black text-white pt-5 pb-3 border-top border-secondary">
-    <div class="container">
-        <div class="row g-4">
-            
-            <!-- Column 1: Brand Info -->
-            <div class="col-lg-4 col-md-6">
-                <h5 class="fw-bold mb-3" style="letter-spacing: 2px;">MONOCHROME</h5>
-                <p class="text-secondary small">
-                    Defining the intersection of architectural structure and fluid movement. 
-                    Designed in New York.
-                </p>
-            </div>
-
-            <!-- Column 2: Navigation -->
-            <div class="col-lg-2 col-md-6">
-                <h6 class="small fw-bold mb-3">SHOP</h6>
-                <ul class="list-unstyled text-secondary small">
-                    <li><a href="men.html" class="footer-link">MEN</a></li>
-                    <li><a href="women.html" class="footer-link">WOMEN</a></li>
-                    <li><a href="accessories.html" class="footer-link">ACCESSORIES</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3: Support -->
-            <div class="col-lg-2 col-md-6">
-                <h6 class="small fw-bold mb-3">SUPPORT</h6>
-                <ul class="list-unstyled text-secondary small">
-                    <li><a href="contact.html" class="footer-link">CONTACT</a></li>
-                    <li><a href="#" class="footer-link">SHIPPING</a></li>
-                    <li><a href="#" class="footer-link">RETURNS</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 4: Newsletter -->
-            <div class="col-lg-4 col-md-6">
-                <h6 class="small fw-bold mb-3">NEWSLETTER</h6>
-                <form class="d-flex border-bottom border-secondary pb-2">
-                    <input type="email" class="bg-transparent border-0 text-white w-100 small" placeholder="EMAIL ADDRESS" style="outline: none;">
-                    <button type="submit" class="bg-transparent border-0 text-white fw-bold small">JOIN</button>
-                </form>
-            </div>
-
-        </div>
-
-        <hr class="my-4 border-secondary">
-
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start small text-secondary">
-                &copy; 2026 MONOCHROME. ALL RIGHTS RESERVED.
-            </div>
-            <div class="col-md-6 text-center text-md-end pt-3 pt-md-0">
-                <a href="#" class="footer-link mx-2">INSTAGRAM</a>
-                <a href="#" class="footer-link mx-2">TIKTOK</a>
-            </div>
-        </div>
-    </div>
+</main>
+<footer class="mt-auto py-3 bg-light">
+  <div class="container text-center">
+    <span class="text-muted">© 2026 MONOCHROME</span>
+  </div>
 </footer>
 
 <script>
