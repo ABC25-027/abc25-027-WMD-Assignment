@@ -1,6 +1,4 @@
-/* =========================
-   CUSTOM FONT
-========================= */
+
 @font-face {
     font-family: 'Grunge';
     src: url('fonts/GRUNGE.TTF') format('truetype');
@@ -13,9 +11,7 @@
     font-family: 'Mileast';
     src: url('fonts/Mileast.otf') format('opentype');
 }
-/* =========================
-   GLOBAL STYLE
-========================= */
+
 body {
     background-color: #000;
     color: #fff;
@@ -24,9 +20,7 @@ body {
     padding: 0;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+
 .navbar {
     position: relative;
     z-index: 1000;
@@ -48,9 +42,7 @@ body {
 .navbar-toggler-icon {
     filter: invert(1);
 }
-/* =========================
-   HERO SECTION (VIDEO)
-========================= */
+
 .hero {
     height: 60vh !important;
     position: relative !important;
@@ -172,9 +164,7 @@ grid-img {
     font-size: 30px;
 }
 
-/* =========================
-   CARDS
-========================= */
+
 .card {
     border: none;
     transition: 0.3s;
@@ -191,9 +181,7 @@ grid-img {
     object-fit: cover;
 }
 
-/* =========================
-   IMAGE GRID (hover effect)
-========================= */
+
 .image-card {
     position: relative;
     display: block;
@@ -207,13 +195,13 @@ grid-img {
     transition: 0.4s ease;
 }
 
-/* Blur on hover */
+
 .image-card:hover img {
     filter: blur(4px);
     transform: scale(1.05);
 }
 
-/* Overlay text */
+
 .overlay-text {
     position: absolute;
     top: 50%;
@@ -235,14 +223,13 @@ grid-img {
     overflow: hidden;
 }
 
-/* image */
 .img-box img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-/* text overlay */
+
 .img-text {
     position: absolute;
     top: 50%;
@@ -257,7 +244,7 @@ grid-img {
 }
 
 .row {
-  row-gap: 60px;     /* vertical space */
+  row-gap: 60px;    
 }
 
 /* BUTTON */
@@ -274,12 +261,12 @@ grid-img {
     position: relative;
 }
 
-/* 2. THE NEW NAVBAR BUTTON (The one you want) */
+
 .navbar-toggler {
-    background: transparent !important; /* Removes the gradient */
-    border: none !important;           /* Removes the border */
-    padding: 0 !important;              /* Removes the extra box padding */
-    box-shadow: none !important;        /* Removes the glow on click */
+    background: transparent !important; 
+    border: none !important;           
+    padding: 0 !important;              
+    box-shadow: none !important;        
 }
 
 /* Container for the lines */
@@ -292,7 +279,6 @@ grid-img {
     align-items: flex-end;
 }
 
-/* The actual white lines */
 .modern-menu-icon span {
     display: block;
     height: 1px; 
@@ -301,7 +287,7 @@ grid-img {
 }
 
 .line-1 { width: 24px; }
-.line-2 { width: 14px; } /* The asymmetrical modern look */
+.line-2 { width: 14px; } 
 
 /* Hover effect */
 .navbar-toggler:hover .line-2 {
@@ -378,9 +364,7 @@ grid-img {
   font-size: 1rem;
   color: #ccc;
 }
-/* =========================
-   FOOTER
-========================= */
+/*  FOOTER */
 footer {
     border-top: 1px solid #222;
 }
@@ -433,17 +417,13 @@ footer {
     color: black;
 }
 
-/* =========================
-   ARCHIVE / INTERVIEWS STYLE
-========================= */
-
 .archive {
     max-width: 1200px;
     margin: 100px auto;
     padding: 0 40px;
 }
 
-/* Year headings */
+
 .year {
     text-align: center;
     font-size: 20px;
@@ -451,19 +431,18 @@ footer {
     margin: 80px 0 60px;
 }
 
-/* Grid for 2-column layout */
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px 120px;
 }
 
-/* Each entry */
 .entry {
     max-width: 500px;
 }
 
-/* Text styles */
+
 .source {
     font-size: 12px;
     letter-spacing: 2px;
@@ -488,7 +467,7 @@ footer {
     letter-spacing: 2px;
 }
 
-/* Make everything uppercase like your screenshot */
+
 .archive p {
     text-transform: uppercase;
 }
@@ -516,7 +495,7 @@ html {
   scroll-behavior: smooth;
 }
 
-./* HERO */
+
 .hero-text {
   min-height: 100vh;
   background: #0a0a0a;
@@ -536,7 +515,7 @@ html {
   margin-top: 20px;
 }
 
-/* MANIFESTO */
+
 .manifesto {
   padding: 120px 20px;
   max-width: 700px;
@@ -549,7 +528,7 @@ html {
   line-height: 1.8;
 }
 
-/* VALUES */
+
 .values {
   padding: 100px 20px;
 }
@@ -559,14 +538,14 @@ html {
   margin-bottom: 10px;
 }
 
-/* GLOBAL */
+
 .global {
   padding: 80px 20px;
   opacity: 0.6;
   letter-spacing: 3px;
 }
 
-/* SCROLL ANIMATION */
+
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -578,9 +557,7 @@ html {
   transform: translateY(0);
 }
 
-/* =========================
-   CHECKOUT PAGE
-========================= */
+/* CHECKOUT PAGE */
 
 body {
   background: #f8f9fa;
@@ -599,29 +576,29 @@ body {
   margin-bottom: 10px;
 }
 
-/* --- HIGH VISIBILITY FORM STYLING --- */
+
 :root {
     --bg-color: #000000;
     --card-bg: #0b0b0b;
     --text-main: #ffffff;
-    --text-dim: #cccccc; /* Brightened for better readability */
+    --text-dim: #cccccc; 
     --accent: #ffffff;
-    --border: #555555;   /* Lightened from #222 for visibility */
+    --border: #555555;  
     --input-focus-bg: #1a1a1a;
 }
 
-/* Base Styles */
+
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
     font-family: 'Inter', sans-serif;
 }
 
-/* --- NAVIGATION COMPACT --- */
+
 .navbar { padding: 0.5rem 0; }
 .navbar-brand { font-size: 1.2rem; letter-spacing: 2px; }
 
-/* --- THE GRID --- */
+
 .checkout-grid {
     display: grid;
     grid-template-columns: 1fr 350px; /* Narrower sidebar */
@@ -630,7 +607,7 @@ body {
     align-items: start;
 }
 
-/* --- SECTION HEADINGS --- */
+
 .section-title {
     font-size: 3 rem;
     font-weight: 800;
@@ -642,45 +619,44 @@ body {
     padding-bottom: 5px;
 }
 
-/* --- TEXT BOXES (INPUTS) --- */
+
 .form-control {
     background-color: var(--card-bg);
-    border: 2px solid var(--border); /* Thicker border to define the box */
-    color: #ffffff !important;      /* Pure white text for what you type */
+    border: 2px solid var(--border); 
+    color: #ffffff !important;      
     border-radius: 0;
     padding: 12px 15px;
     font-size: 1rem;
     transition: all 0.2s ease-in-out;
 }
 
-/* Placeholder Text (The hint inside the box) */
+
 .form-control::placeholder {
-    color: #aaaaaa !important;      /* Lighter gray so you can see the label */
+    color: #aaaaaa !important;     
     opacity: 1; 
 }
 
-/* When you click into the box */
 .form-control:focus {
     background-color: var(--input-focus-bg);
-    border-color: var(--accent);    /* White border on focus */
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Subtle glow */
+    border-color: var(--accent);    
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); 
     outline: none;
     color: #ffffff;
 }
 
-/* --- LABELS & TITLES --- */
+
 .section-title {
     font-size: 0.85rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #ffffff; /* Maximum contrast */
+    color: #ffffff;
     margin-bottom: 20px;
     border-bottom: 2px solid #333;
     padding-bottom: 8px;
 }
 
-/* Payment Method Visibility */
+
 .payment-selection .form-check {
     border: 2px solid var(--border);
     background: var(--card-bg);
@@ -693,13 +669,13 @@ body {
     border-color: #888;
 }
 
-/* --- SUMMARY BOX --- */
+
 .summary-box {
     background-color: #111;
     border: 2px solid #333;
     padding: 25px;
 }
-/* --- PAYMENT METHODS BOX --- */
+
 .payment-selection {
     display: flex;
     gap: 10px;
@@ -714,7 +690,7 @@ body {
     cursor: pointer;
 }
 
-/* --- ACTION BUTTON --- */
+
 .btn-checkout {
     background-color: var(--accent);
     color: #000;
@@ -727,14 +703,14 @@ body {
     margin-top: 15px;
 }
 
-/* Responsive fix */
+
 @media (max-width: 992px) {
     .checkout-grid { grid-template-columns: 1fr; }
 }
 
-/* --- BACK BUTTON STYLES --- */
 
-/* Main Back to Shop Link */
+
+
 .btn-back {
     color: #ffffff;
     text-decoration: none;
@@ -751,7 +727,7 @@ body {
     border-bottom: 1px solid #888888;
 }
 
-/* Secondary Return to Cart Button */
+
 .btn-back-secondary {
     color: #aaaaaa;
     text-decoration: none;
@@ -766,7 +742,7 @@ body {
     color: #ffffff;
 }
 
-/* --- ACCOUNT PAGE THEME --- */
+
 body {
     background-color: #000;
     color: #fff;
@@ -794,7 +770,7 @@ body {
     color: #888;
 }
 
-/* --- CARDS --- */
+
 .account-card {
     background-color: #0b0b0b;
     border: 2px solid #333; /* High visibility border */
@@ -812,7 +788,7 @@ body {
     display: block;
 }
 
-/* --- PROFILE DETAILS --- */
+
 .profile-detail {
     margin-bottom: 25px;
 }
@@ -829,10 +805,10 @@ body {
 .profile-detail p {
     font-size: 1.1rem;
     margin: 0;
-    color: #fff; /* High visibility */
+    color: #fff; 
 }
 
-/* --- ORDER HISTORY --- */
+
 .history-item {
     background: #111;
     border: 1px solid #222;
@@ -852,7 +828,7 @@ body {
     text-decoration: underline;
 }
 
-/* --- BUTTONS --- */
+
 .btn-edit {
     background: transparent;
     color: #fff;
@@ -871,14 +847,14 @@ body {
     color: #000;
 }
 
-/* --- MODAL STYLES --- */
+
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9); /* Dim the background */
+    background: rgba(0, 0, 0, 0.9); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -893,17 +869,15 @@ body {
     max-width: 500px;
 }
 
-/* Adjust the button in the profile card to trigger the modal */
+
 .btn-edit {
     cursor: pointer;
 }
 
-/* --- ACCOUNT PAGE BUTTONS (RECEIPT STYLE) --- */
 
-/* The Primary "Save" or "Confirm" Button */
 .btn-receipt-primary {
-    background-color: #ffffff; /* Solid White */
-    color: #000000;            /* Black Text */
+    background-color: #ffffff; 
+    color: #000000;            
     border: 1px solid #ffffff;
     width: 100%;
     padding: 14px;
@@ -913,7 +887,7 @@ body {
     font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.2s ease;
-    border-radius: 0;          /* Sharp edges for a professional look */
+    border-radius: 0;          
 }
 
 .btn-receipt-primary:hover {
@@ -921,11 +895,11 @@ body {
     color: #ffffff;
 }
 
-/* The Secondary "Edit" or "Cancel" Button */
+
 .btn-receipt-secondary {
     background-color: transparent;
     color: #ffffff;
-    border: 1px solid #555555; /* Higher visibility grey border */
+    border: 1px solid #555555;
     width: 100%;
     padding: 12px;
     font-weight: 700;
@@ -942,7 +916,7 @@ body {
     background-color: #111111;
 }
 
-/* The Warning "Logout" Button */
+
 .btn-receipt-danger {
     background: transparent;
     color: #ff4444;
@@ -963,10 +937,10 @@ body {
     color: #ffffff;
 }
 
-/* Custom Dropdown Styling */
+
 .dropdown-menu {
-    border-radius: 0; /* Sharp edges */
-    border: 1px solid #333; /* High visibility border */
+    border-radius: 0; 
+    border: 1px solid #333;
     background-color: #000;
 }
 
@@ -983,35 +957,35 @@ body {
     color: #fff;
 }
 
-/* Optional: Make it open on hover for desktop */
+
 @media (min-width: 992px) {
     .nav-item.dropdown:hover .dropdown-menu {
         display: block;
     }
 }
 
-/* Ensure cart and menu button look good together on mobile */
+
 @media (max-width: 991px) {
     .navbar-brand {
         font-size: 1.2rem;
         letter-spacing: 2px;
     }
 
-    /* Make the cart link stand out slightly on mobile */
+
     .nav-link[href="cart.html"] {
         font-size: 0.8rem;
         font-weight: 800;
         letter-spacing: 1px;
     }
 
-    /* Style for the hamburger icon */
+  
     .navbar-toggler {
         padding-right: 0;
         color: #fff;
     }
 }
 
-/* Optional: Small white dot for cart items */
+
 .cart-dot {
     height: 6px;
     width: 6px;
@@ -1023,23 +997,23 @@ body {
     right: 5px;
 }
 
-/* 1. Sleek Navigation Links */
+
 .nav-link-modern {
     color: #ffffff;
     text-decoration: none;
     font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 2.5px; /* Adds that high-end look */
+    letter-spacing: 2.5px; 
     text-transform: uppercase;
     transition: opacity 0.3s ease;
     position: relative;
 }
 
 .nav-link-modern:hover {
-    opacity: 0.6; /* Soft fade instead of color change */
+    opacity: 0.6; 
 }
 
-/* 2. Modern Cart Badge (Small Dot) */
+
 .cart-count-badge {
     font-size: 0.6rem;
     vertical-align: top;
@@ -1047,7 +1021,7 @@ body {
     font-weight: 400;
 }
 
-/* 3. The Modern Hamburger (Custom Lines) */
+
 .navbar-toggler-modern {
     background: none;
     border: none;
@@ -1060,11 +1034,11 @@ body {
     height: 20px;
 }
 
-/* Custom Menu Lines */
+
 .menu-icon .line {
     display: block;
     width: 25px;
-    height: 1px; /* Very thin line for elegance */
+    height: 1px; 
     background-color: #fff;
     margin-bottom: 6px;
     transition: transform 0.3s ease, width 0.3s ease;
@@ -1072,7 +1046,7 @@ body {
 
 .menu-icon .line:last-child {
     margin-bottom: 0;
-    width: 18px; /* Make the bottom line shorter for a modern asymmetrical look */
+    width: 18px; 
 }
 
 /* Hover effect for the menu lines */
@@ -1081,45 +1055,44 @@ body {
 }
 
 
-/* The main wrapper for your Cart/Checkout content */
+
 .cart-container, .checkout-container {
-    width: 95%;          /* Uses most of the screen on mobile */
-    max-width: 1200px;    /* Prevents it from getting too wide on desktop */
-    margin: 0 auto;       /* Centers the content */
+    width: 95%;          
+    max-width: 1200px;    
+    margin: 0 auto;       
     padding: 15px;
 }
 
-/* Fix for Tables (Cart items) */
+
 @media (max-width: 768px) {
     table {
         display: block;
-        overflow-x: auto; /* Adds a scrollbar ONLY to the table if it's too wide */
+        overflow-x: auto; 
         white-space: nowrap;
     }
 }
 
-/* If you are using Bootstrap's row/col, this happens automatically. 
-   If you are using custom CSS: */
+
 .cart-layout {
     display: flex;
-    flex-direction: column; /* Stack vertically by default */
+    flex-direction: column; 
     gap: 20px;
 }
 
 @media (min-width: 992px) {
     .cart-layout {
-        flex-direction: row; /* Side-by-side only on laptops/desktops */
+        flex-direction: row;
     }
 }
 
     input[type="text"], 
 input[type="email"], 
 .form-control {
-    width: 100% !important; /* Forces inputs to stay inside their parent div */
-    font-size: 16px;        /* Prevents iOS from zooming in automatically on click */
+    width: 100% !important; 
+    font-size: 16px;        
 }
 
-/* Ensure the checkout button isn't too small or too wide */
+
 .btn-receipt-primary {
     width: 100%;
     margin-top: 10px;
@@ -1130,16 +1103,16 @@ input[type="email"],
 }
 
 body {
-    overflow-x: hidden; /* Prevents the page from shaking or scrolling sideways */
+    overflow-x: hidden; 
     width: 100%;
 }
 
-/* --- CONTACT PAGE SPECIFIC --- */
+
 
 .label {
     font-size: 0.7rem;
     letter-spacing: 2px;
-    color: #555; /* Muted label text */
+    color: #555; 
     display: block;
     margin-bottom: 5px;
 }
@@ -1150,12 +1123,12 @@ body {
     font-weight: 500;
 }
 
-/* Custom Minimalist Input Fields */
+
 .form-control-custom {
     width: 100%;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #333; /* Very thin dark line */
+    border-bottom: 1px solid #333; 
     padding: 15px 0;
     color: white;
     font-size: 0.8rem;
@@ -1166,15 +1139,14 @@ body {
 
 .form-control-custom:focus {
     outline: none;
-    border-bottom: 1px solid #ffffff; /* Line turns white when typing */
+    border-bottom: 1px solid #ffffff; 
 }
 
-/* Make placeholders look consistent */
 .form-control-custom::placeholder {
     color: #444;
 }
 
-/* Add some space for mobile */
+
 @media (max-width: 991px) {
     .display-5 {
         font-size: 2.5rem;
@@ -1182,19 +1154,17 @@ body {
     }
 }
 
-/* --- ULTRA MINIMALIST FOOTER --- */
 
-/* --- MONOCHROME CUSTOM FOOTER --- */
 
 .monochrome-footer {
-    background-color: #000; /* Matching your black-and-white theme */
+    background-color: #000; 
     padding: 60px 0 30px 0;
     width: 100%;
     border-top: 1px solid #1a1a1a;
-    margin-top: auto; /* Keeps it at the bottom of the page */
+    margin-top: auto; 
 }
 
-/* Horizontal Link Row */
+
 .footer-nav-row {
     display: flex;
     flex-wrap: wrap;
@@ -1205,19 +1175,19 @@ body {
 
 .f-link {
     text-decoration: none;
-    color: #777; /* Muted gray for that high-end look */
+    color: #777; 
     font-size: 0.65rem; 
     font-weight: 700;
-    letter-spacing: 2.5px; /* High spacing like Rick Owens */
+    letter-spacing: 2.5px; 
     text-transform: uppercase;
     transition: 0.3s ease;
 }
 
 .f-link:hover {
-    color: #fff; /* Highlights white on hover */
+    color: #fff; 
 }
 
-/* Legal text Row */
+
 .footer-legal-row p {
     color: #444; 
     font-size: 0.55rem;
@@ -1227,7 +1197,7 @@ body {
     line-height: 1.8;
 }
 
-/* Mobile Responsiveness */
+
 @media (max-width: 768px) {
     .footer-nav-row {
         gap: 15px;
@@ -1238,7 +1208,7 @@ body {
     }
 }
 
-/* --- FOOTER FIXES --- */
+
 .monochrome-footer {
     background-color: #000;
     padding: 60px 0 30px 0;
@@ -1270,7 +1240,7 @@ body {
     line-height: 1.8;
 }
 
-/* Ensure the hero video stays behind everything */
+
 .hero-video {
     position: absolute;
     top: 0;
@@ -1281,9 +1251,9 @@ body {
     z-index: -1;
 }
 
-/* --- CATEGORY SPLIT --- */
+
 .category-card {
-    height: 80vh; /* Large impact height */
+    height: 80vh; 
 }
 
 .category-img {
@@ -1299,7 +1269,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.2); /* Faint tint */
+    background: rgba(0,0,0,0.2); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1309,7 +1279,7 @@ body {
 .category-title {
     color: #fff;
     font-weight: 700;
-    letter-spacing: 15px; /* Wide editorial spacing */
+    letter-spacing: 15px; 
     transition: letter-spacing 0.5s ease;
 }
 
@@ -1321,14 +1291,13 @@ body {
     letter-spacing: 20px;
 }
 
-/* --- EDITORIAL QUOTE --- */
+
 .italic-font {
     font-style: italic;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* --- RUNWAY GALLERY --- */
 .runway-scroll-wrapper::-webkit-scrollbar {
     height: 2px;
 }
@@ -1338,7 +1307,7 @@ body {
 }
 
 .runway-item {
-    flex: 0 0 350px; /* Width of each runway photo */
+    flex: 0 0 350px; 
     height: 500px;
 }
 
@@ -1346,7 +1315,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(100%); /* Keeps it Monochrome */
+    filter: grayscale(100%); 
     transition: filter 0.5s ease;
 }
 
@@ -1355,9 +1324,9 @@ body {
 }
 
 p {
-    font-size: 1.1rem; /* Adjust this number (e.g., 1.05rem to 1.2rem) */
-    line-height: 1.7;  /* Increases vertical space between lines for better readability */
-    letter-spacing: 0.5px; /* Keeps the high-fashion editorial feel */
+    font-size: 1.1rem; 
+    line-height: 1.7;  
+    letter-spacing: 0.5px; 
 }
 
 .btn-back-store {
@@ -1367,7 +1336,7 @@ p {
     letter-spacing: 1px;
     color: #000;
     text-decoration: none;
-    border-bottom: 1px solid #000; /* Subtle underline instead of a box */
+    border-bottom: 1px solid #000; 
     padding-bottom: 2px;
     transition: opacity 0.2s;
 }
